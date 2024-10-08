@@ -11,6 +11,8 @@ import adminAuthRouter from './router/adminAuthenticationRouter.js';
 import reportJobRouter from './router/reportJobRouter.js';
 import messageRouter from './router/messageRoutes.js';
 import bannerRouter from './router/bannerRouter.js';
+import { use } from 'bcrypt/promises.js';
+import { get } from 'mongoose';
 const app = express();
 app.use(fileUpload());
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -33,10 +35,15 @@ app.use("/api/job", jobRouter);
 app.use('/api/message',messageRouter);
 app.use("/api/report",reportJobRouter);
 app.use("/api/banner",bannerRouter);
-app.use((err,res) => {
-  console.error(err.stack);
-  res.status(500).send('Something went wrong!');
+app.get('/', (req, res) => {
+    res.send('Welcome to the Easy Job Backend API!');
 });
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send(err.message || 'Something went wrong!'); 
+});
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
