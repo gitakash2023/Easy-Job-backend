@@ -1,0 +1,11 @@
+# Exclude node_modules directory
+node_modules/
+
+# Exclude .env file
+.env
+
+# Exclude .DS_Store file
+.DS_Store
+
+# Exclude .vscode directory
+.vscode/

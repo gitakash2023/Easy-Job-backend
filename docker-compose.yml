@@ -1,0 +1,9 @@
+services:
+  rest-api:
+    build: .
+    container_name: easy-jobs-rest-api
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    command: ["npm", "run", "start"]

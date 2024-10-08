@@ -1,0 +1,33 @@
+const journeyConstantMessage = {
+    JOURNEY_CREATED :"Your Journey is created successfully",
+    JOURNEY_CREATED_FAILED :"Your Journey creation is failed!..",
+    JOURNEY_EMPTY_DATA : "",
+    JOURNEY_INTERNAL_SERVER_ERROR :"Some thing went wrong",
+    INVALID_CONTRIBUTOR_INVITE:"Invalid Contributor please check read and write options.",
+    JOURNEYS_FETCHED:"Users journey fetched successfully.",
+    PEOPLES_ARE_INVITED_SUCCESSFULLY:"People invited successfully",
+    FAILED_TO_INVITES_PEOPLE:"Failed to Invite people",
+    INVITED_PEOPLE_REMOVED_SUCCESSFULLY:"Invited People Successfully removed.",
+    CONTRIBUTED_INVITED_PEOPLE_REMOVED_SUCCESSFULLY:"Contributed People Successfully removed",
+    CONTRIBUTED_INVITED_PEOPLE_REMOVED_FAILED:"Contributed People failed to removed",
+    INVITED_PEOPLES_DATA_FETCHED_SUCCESSFULLY :"Invited peoples data fetched successfully",
+    INVITED_PEOPLES_DATA_FETCHED_FAILED :"Invited peoples data fetched failed",
+    CONTRBUTED_INVITED_PEOPLES_DATA_FETCHED_SUCCESSFULLY :"Contributed peoples invited peoples data fetched successfully",
+    CONTRIBUTED_INVITED_PEOPLES_DATA_FETCHED_FAILED :"COntributed peoples invited peoples data fetched failed",
+    JOURNEY_REMOVED_SUCCESSFULLY:"Journey removed successfully",
+    JOURNEY_REMOVED_FAILED:"Journey removed failed",
+    PEOPLES_ARE_INVITED_TO_CONTRIBUTES:"More Peoples are added to contribute successfully",
+    FAILED_TO_INVITED_TO_CONTRIBUTES:"Failed to add people in contributions",
+    FAILED_TO_INVITES_PEOPLE:"Failed to Invite people",
+    JOURNEY_DATA_ADDED_SUCCESSFULLY:"Journey Data added successfully",
+    JOURNEY_DATA_ADDED_FAILED:"Journey Data added failed",
+    JOURNEY_INVALID_DATA:"Invalid input data.",
+    JOURNEY_USER_CANNOT_INVITED_THEIR_OWN_JOURNEY:"User cannot be invited to their own journey.",
+    JOURNEY_USER_CANNOT_CONTRIBUTE_THEIR_OWN_JOURNEY:"User cannot be contribute to their own journey.",
+    JOURNEY_INVALID_CONTRIBUTE_DATA:"Invalid contributorInvite data.",
+    PUBLID:"Public",
+    PRIVATE:"Private",
+    PRIVATE_JOURNEY:"Its a private journey no other one is allowed."
+
+}
+export default journeyConstantMessage;
